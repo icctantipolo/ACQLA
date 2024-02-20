@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+}
+
+body,html {
+    margin: 1%;
+
+    top: 0;
+}
+
+body {
+    background-color: rgb(224, 232, 245);
+    font-family: "Fredoka", sans-serif;
+}
+
+
+/*Header*/
+header {
+    margin-bottom: 10%;
+    
+}
+
+/* LOGBUTTON */
+
+
+#Log-btn {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    margin-left: 80%;
+    width: 10%;
+    border: none;
+    background-color: rgb(218, 218, 244);
+    cursor: pointer;
+    transition: 200ms;
+    border-radius: 25px;
+}
+
+#Log-btn:hover {
+    transform: scale(1.2);
+    background-color: rgb(123, 123, 160);
+}
+
+
+
+
+/*---TABLES---*/
+
+tr {
+    width: 50%;
+    font-size: 50px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+table {
+    display: flex;
+    margin-bottom: 5%;
+}
+
+/*--Log Container--*/
+#Log-container {
+    position: absolute;
+    font-weight: 500;
+    top: 20%;
+    right: 25%;
+    transform: translate(0%, -0%);
+    background-color: white;
+    border: 5px solid rgb(111, 108, 246);
+    width: 50%;
+    height: 50%;
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 10px;
+    background: linear-gradient(rgba(95, 101, 185, 0.5), rgba(165, 182, 228, 0.5));
+    backdrop-filter: blur(15px);
+}
+
+#Log-container.show{
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+/*--Log Position--*/
+
+#L-container {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+input {
+    margin: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+label {
+    margin-left: 10px;
+}
+
+#course-select{
+    position: absolute;
+    left: 10px;
+    margin-top: 5%;
+    background-color: none;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 15%;
+}
+#course-select option{
+    animation: selection 5s ease-in-out;
+}
+@keyframes selection {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#adminbtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+}
+#adminbtn a{
+    text-decoration: none;
+    color: red;
+}
+
+#Qr-gen {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    border: 2px solid black;
+    max-width: fit-content;
+    height: 50%;
+}
