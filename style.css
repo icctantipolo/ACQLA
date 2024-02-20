@@ -73,7 +73,7 @@ table {
     border: 5px solid rgb(111, 108, 246);
     width: 50%;
     height: 50%;
-    display: block;
+    display: none;
     animation: fadeIn 0.5s ease-in-out;
     border-radius: 10px;
     background: linear-gradient(rgba(95, 101, 185, 0.5), rgba(165, 182, 228, 0.5));
